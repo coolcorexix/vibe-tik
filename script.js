@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const iframeSources = [
         ['https://swim.endacott.me/','https://x.com/RyanEndacott'] ,
         ['https://fly.pieter.com/','https://x.com/levelsio'] ,
+        ['https://land-the-booster.s13k.dev/', 'https://x.com/s13k_'],
         ['https://vibesail.com/', 'https://x.com/nicolamanzini'],
         ['https://raceviberz.com/', 'https://x.com/LoukilAymen']
     ];
