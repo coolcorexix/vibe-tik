@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe-Tik | Random Content Explorer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+            background-color: #f8f9fa;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .brand {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .brand span {
+            color: #4CAF50;
+        }
+        
+        .tagline {
+            font-size: 14px;
+            color: #666;
+            font-style: italic;
+        }
+        
+        .maker {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        .iframe-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        }
+        
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <div class="brand">Vibe-<span>Tik</span></div>
+        </div>
+        
+        <div class="tagline">All the vibecoding games are here | <span id="currentMaker" class="maker">Select a game >>>>></span></div>
+        <button id="randomButton">Get next game</button>
+    </div>
+    
+    <div class="iframe-container" id="iframeContainer">
+        <p>Click the button to load random content</p>
+        <p style="margin-top: 10px; font-size: 14px;">Want to add your game? <a href="https://github.com/ryanendacott/vibe-tik" style="color: #4CAF50;">Make a PR on GitHub</a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
